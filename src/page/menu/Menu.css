@@ -1,0 +1,35 @@
+/* 메인 메뉴 */
+.menu {
+    padding:10px;
+    border-bottom:1px solid #ccc;
+    background:#eee;
+}
+.menu:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.menu li {
+    position:relative;
+    float:left;
+    list-style:none;
+}
+.menu li:after {
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    width:1px;
+    height:10px;
+    margin-top:-4px;
+    background:#bbb;
+}
+.menu li:last-child:after {
+    display:none;
+}
+.menu li a {
+    padding:10px;
+    font-size:14px;
+    color:#333;
+    text-decoration:none;
+}

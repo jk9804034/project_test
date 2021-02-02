@@ -1,0 +1,54 @@
+* {
+  margin:0;
+  padding:0;
+  font-family:"맑은고딕", "Malgun Gothic";
+}
+
+.sample {
+  padding:20px;
+}
+
+h1 {
+  margin-bottom:20px;
+  padding:10px;
+  font-weight:normal;
+  font-size:20px;
+  border-bottom:1px solid #ccc;
+}
+
+/* 카운터 */
+.counter_value {
+  width: 167px;
+  padding: 25px 0px;
+  font-size: 50px;
+  text-align: center;
+}
+.counter_button {
+  margin:0 6px;
+  padding:10px 20px;
+  font-size:14px;
+  color:#333;
+  border:1px solid #ccc;
+  background:#fff;
+}
+
+/* 인풋값 */
+.input_text {
+  border: 1px solid #ccc;
+  height: 28px;
+  width: 195px;
+  margin-right: 5px;
+}
+.input_first,
+.input_last {
+  width:122px;
+}
+.input_button {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  color: #666;
+}
+.input_result {
+  margin: 10px;
+  font-size: 16px;
+}

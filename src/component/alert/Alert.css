@@ -1,0 +1,58 @@
+/* Alert Css */
+.alert {
+    position:fixed;
+    left:50%;
+    top:50%;
+    width:300px;
+    border:1px solid #19ce60;
+    background:#fff;
+    transform:translate(-50%, -50%);
+    opacity:0;
+    visibility:hidden;
+    z-index:10;
+    transition:all 0.5s;
+}
+.alert .alert_in {
+    padding:25px 20px 20px;
+}
+.alert .title {
+    font-size:14px;
+    color:#666;
+    text-align:center;
+}
+.alert .controll_button {
+    margin-top:15px;
+    padding-top:15px;
+    text-align:center;
+    border-top:1px solid #ccc;
+}
+.alert .controll_button button {
+    padding:5px 15px;
+    font-weight:bold;
+    font-size:12px;
+    color:#fff;
+    border:1px solid #ccc;
+    background:#19ce60;
+    cursor:pointer;
+}
+.alert_bg {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0;
+    visibility:hidden;
+    z-index:9;
+    transition:all 0.5s;
+}
+/* 활성화 */
+.alert_active {
+    opacity:1;
+    visibility:visible;
+}
+.alert_bg_active {
+    opacity:0.6;
+    visibility:visible;
+}

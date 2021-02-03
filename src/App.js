@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Menu from "./page/menu/Menu";
 import Counter from "./page/sample/Counter";
 import InputSample from "./page/sample/InputSample";
+import CreateUserContainer from "./container/CreateUserContainer";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" exact={true} component={Counter} />
       <Route path="/counter" component={Counter} />
       <Route path="/input" component={InputSample} />
+      <Route path="/user" component={CreateUserContainer} />
     </div>
   );
 }

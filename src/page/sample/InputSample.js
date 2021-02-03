@@ -56,7 +56,7 @@ function InputSample(){
 
     return (
         <div className="sample">
-            <h1>인풋값 테스트</h1>
+            <h1>인풋값 변경 예제</h1>
             <input type="text" className="input_text" ref={firstInput} value={value} onChange={evtInputValue} onKeyDown={evtInputEnter} />
             <button type="button" className="input_button" onClick={evtValueReset}>초기화</button>
             <div className="input_result">

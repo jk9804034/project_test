@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function CreateUser({
     username,
@@ -7,6 +7,7 @@ function CreateUser({
     onCreate,
     onModify
 }) {
+    console.log(username, email);
     return (
         <div className="sample">
             <h1>유저정보 추가 예제</h1>
@@ -30,4 +31,4 @@ function CreateUser({
     )
 }
 
-export default CreateUser;
+export default React.memo(CreateUser);

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-function CreateList({
+const CreateList = ({
     users,
     onDelete,
     onToggle
-}) {
+}) => {
+    console.log(users);
+
     // 목록 생성
     const list = users.map(( item ) => {
         return (
@@ -17,10 +19,12 @@ function CreateList({
     });
 
     return (
-        <ul className="user_list">
-            {list}
-        </ul>
+        <>
+            <ul className="user_list">
+                {list}
+            </ul>
+        </>
     )
 }
 
-export default CreateList;
+export default React.memo(CreateList);

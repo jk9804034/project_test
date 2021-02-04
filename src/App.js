@@ -4,6 +4,7 @@ import Menu from "./page/menu/Menu";
 import Counter from "./page/sample/Counter";
 import InputSample from "./page/sample/InputSample";
 import CreateUserContainer from "./container/CreateUserContainer";
+import Hooks from "./page/sample/Hooks";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path="/counter" component={Counter} />
       <Route path="/input" component={InputSample} />
       <Route path="/user" component={CreateUserContainer} />
+      <Route path="/hooks" component={Hooks} />
     </div>
   );
 }

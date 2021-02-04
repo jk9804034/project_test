@@ -14,6 +14,8 @@ function Alert({
         activeBg = "alert_bg_active";
     }
 
+    console.log("Alert 실행");
+
     return (
         <>
             {/* Alert 레이어 */}
@@ -32,4 +34,4 @@ function Alert({
     )
 }
 
-export default Alert;
+export default React.memo(Alert);

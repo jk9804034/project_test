@@ -4,7 +4,7 @@ import CreateList from "../page/sample/CreateList";
 import Alert from "../component/alert/Alert";
 
 function countActiveUsers(users){
-    console.log("활성 사용자 수를 세는중...");
+    console.log("사용자 체크");
     return users.filter(item => item.active).length;
 };
 

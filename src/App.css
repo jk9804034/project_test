@@ -83,3 +83,6 @@ h1 {
 .user_list li.active {
   color:#ff0000;
 }
+.user_list_sample {
+  margin:15px 0 0;
+}

@@ -15,6 +15,34 @@ h1 {
   font-size:20px;
   border-bottom:1px solid #ccc;
 }
+/* 공통 버튼 */
+.button {
+  margin:15px 10px 0;
+  padding: 5px 10px;
+  color: #666;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+/* 공통 리스트 */
+.ulType {
+  margin:0;
+}
+.ulType li {
+  position:relative;
+  margin:5px 0;
+  padding-left:10px;
+  list-style:none;
+}
+.ulType li:before {
+  content:"";
+  position: absolute;
+  left:0;
+  top:50%;
+  width:2px;
+  height:2px;
+  border-radius:2px;
+  background:#333;
+}
 
 /* 카운터 */
 .counter_value {

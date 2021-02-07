@@ -10,6 +10,11 @@ function Counter(){
                 <li><Link to="/input">인풋값</Link></li>
                 <li><Link to="/user">유저추가</Link></li>
                 <li><Link to="/hooks">Hooks</Link></li>
+                <li><Link to="/immer">Immer</Link></li>
+                <li><Link to="/scss">SCSS</Link></li>
+                <li><Link to="/styled">Styled Css</Link></li>
+                <li><Link to="/todo">Todo</Link></li>
+                <li><Link to="/axios">Axios</Link></li>
             </ul>
         </>
     )

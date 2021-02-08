@@ -1,5 +1,6 @@
 import React, { useReducer, createContext, useContext, useRef } from "react";
 
+// 초기 데이터
 const initialTodos = [
     {
         id: 1,
@@ -39,10 +40,12 @@ function todoReducer(state, action){
     }
 }
 
+// Context 생성
 const TodoStateContext = createContext();
 const TodoDispatchContext = createContext();
 const TodoNextIdContext = createContext();
 
+// Context Provider
 export function TodoProvider({ children }){
     const [state, dispatch] = useReducer(todoReducer, initialTodos);
     const nextId = useRef(5);

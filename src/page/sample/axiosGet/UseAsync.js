@@ -1,9 +1,9 @@
-import { useReducer, uerEffect, useEffect } from "react";
+import { useReducer, useEffect } from "react";
 
 const initialState = {
     loading : false,
     data : null,
-    error : fasle
+    error : false
 }
 
 function reducer(state, action){
@@ -27,7 +27,7 @@ function reducer(state, action){
                 error : action.error
             };
         default :
-            throw new Error(`Unhandled action type : ${ation.type}`);
+            throw new Error(`Unhandled action type : ${action.type}`);
     }
 }
 
@@ -39,10 +39,10 @@ function useAsync(callback, deps = []){
         dispatch({ type : "LOADING" });
 
         try {
-            const response = await callback();
+            const data = await callback();
 
             // 데이터 로드 완료후 저장
-            dispatch({ type : "SUCCESS", data : response.data });
+            dispatch({ type : "SUCCESS", data : data });
         } catch(e){
             dispatch({ type : "ERROR", error : e });
         }
@@ -50,7 +50,7 @@ function useAsync(callback, deps = []){
     
     useEffect(() => {
         fetchData();
-    }, dep);
+    }, deps);
 
     return [state, fetchData];
 }

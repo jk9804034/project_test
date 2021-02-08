@@ -15,6 +15,9 @@ function Counter(){
                 <li><Link to="/styled">Styled Css</Link></li>
                 <li><Link to="/todo">Todo</Link></li>
                 <li><Link to="/axios">Axios</Link></li>
+                <li><Link to="/axios_context">Axios Context</Link></li>
+                <li><Link to="/redux">Redux</Link></li>
+                <li><Link to="/middleware">Middleware</Link></li>
             </ul>
         </>
     )

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useMemo, useCallback } from "react";
-import CreateUser from "../page/sample/CreateUser";
-import CreateList from "../page/sample/CreateList";
-import Alert from "../component/alert/Alert";
+import CreateUser from "./CreateUser";
+import CreateList from "./CreateList";
+import Alert from "../../../component/alert/Alert";
 
 function countActiveUsers(users){
     console.log("사용자 체크");

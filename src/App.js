@@ -13,6 +13,7 @@ import AxiosGet from "./page/sample/axiosGet/AxiosGet";
 import AxiosGetContext from "./page/sample/axiosGet/AxiosGetContext";
 import ReduxContent from "./page/sample/redux/ReduxContent";
 import ReduxMiddleware from "./page/sample/reduxMiddleware/ReduxMiddleware";
+import TodoContainer from "./page/example/todos/TodoContainer";
 
 import "./App.css";
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/axios_context" component={AxiosGetContext} />
         <Route path="/redux" component={ReduxContent} />
         <Route path="/middleware" component={ReduxMiddleware} />
+        <Route path="/exp_todo" component={TodoContainer} />
         <Redirect path="*" to="/" />
       </Switch>
     </div>

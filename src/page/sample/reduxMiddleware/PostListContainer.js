@@ -13,6 +13,7 @@ function PostListContainer(){
         error
     } = useSelector(state => state.posts.posts);
 
+    // 초기 한번 실행
     useEffect(() => {
         dispatch( getPosts() );
     }, []);
